@@ -1,0 +1,55 @@
+/* *********************************** */
+/* UNTUK TABLET (1000px) */
+/* *********************************** */
+@media (max-width: 1000px) {
+  header {
+    padding: 0 24px;
+  }
+
+  footer {
+    padding: 24px;
+  }
+
+  .hero h1 {
+    font-size: 120px;
+  }
+
+  .hero p {
+    font-size: 45px;
+  }
+
+  .ninja {
+    width: 230px;
+    height: 230px;
+  }
+
+  .project-image img {
+    width: 250px;
+  }
+}
+
+/* *********************************** */
+/* UNTUK SMARTPHONE (640px) */
+/* *********************************** */
+@media (max-width: 640px) {
+  header ul {
+    gap: 18px;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .hero p {
+    font-size: 33px;
+  }
+
+  .ninja {
+    width: 180px;
+    height: 180px;
+  }
+
+  .project-image img {
+    width: 180px;
+  }
+}
