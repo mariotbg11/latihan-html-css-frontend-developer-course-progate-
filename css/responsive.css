@@ -53,3 +53,45 @@
     width: 180px;
   }
 }
+
+/* *********************************** */
+/* UNTUK SMARTPHONE SMALL (400px) */
+/* *********************************** */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .ninja {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-image {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  footer ul {
+    margin-left: 0;
+    padding-left: 0;
+    align-items: start;
+  }
+}
