@@ -118,11 +118,17 @@ header ul {
 
 .project-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-item {
+  display: none;
 }
 
 .project-image img {
-  width: 350px;
+  width: 400px;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.085);
 }
 
@@ -131,11 +137,85 @@ header ul {
   margin-top: 20px;
 }
 
+/* MODAL */
+.prev,
+.next {
+  position: absolute;
+  top: 155px;
+  left: 33%;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+/* Animasi */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+#modalContent {
+  background-color: #fefefe;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+}
+
+#closeModalIcon {
+  color: #aaaaaa;
+  float: right;
+}
+
+#closeModalIcon:hover,
+#closeModalIcon:focus {
+  color: #000;
+  cursor: pointer;
+}
+
 /* *********************************** */
 /* BAGIAN HUBUNGI/CONTACT */
 /* *********************************** */
 .section-contact {
-  padding: 90px 0 120px 0;
+  padding: 90px 0;
   background-color: rgb(235, 235, 235);
 }
 
@@ -164,7 +244,7 @@ textarea {
   border-radius: 10px;
 }
 
-a {
+.btn-send {
   display: block;
   width: 500px;
   margin: 0 auto;
@@ -174,6 +254,47 @@ a {
   color: rgb(49, 49, 49);
   border-radius: 10px;
   margin-top: 40px;
+}
+
+/* *********************************** */
+/* BAGIAN HUBUNGI/CONTACT */
+/* *********************************** */
+.section-faq {
+  padding: 90px 0 120px 0;
+}
+
+.faq {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.3s all;
+}
+
+.accordion:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.panel {
+  display: none;
+  padding: 0 18px;
+  background-color: white;
 }
 
 /* *********************************** */
