@@ -48,21 +48,49 @@
       </section>
 
       <section class="section-project">
-        <div class="project">
+        <div class="project" id="project">
           <h2>Proyek Contoh</h2>
           <div class="project-image">
-            <div>
-              <img src="img/1.png" alt="project 1 photo" />
+            <div class="slider-item fade">
+              <a href="#project" id="openModalButton"
+                ><img src="img/1.png" alt="project 1 photo"
+              /></a>
               <p>Image 1</p>
             </div>
-            <div>
+            <div id="myModal">
+              <div id="modalContent">
+                <span id="closeModalIcon">&times;</span>
+                <h2>Project</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit ullam
+                  exercitationem.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="slider-item fade">
               <img src="img/2.png" alt="project 2 photo" />
               <p>Image 2</p>
             </div>
-            <div>
+            <div class="slider-item fade">
               <img src="img/3.png" alt="project 2 photo" />
               <p>Image 3</p>
             </div>
+            <div class="slider-item fade">
+              <img src="img/2.png" alt="project 4 photo" />
+              <p>Image 4</p>
+            </div>
+            <div class="slider-item fade">
+              <img src="img/1.png" alt="project 4 photo" />
+              <p>Image 5</p>
+            </div>
+            <div class="slider-item fade">
+              <img src="img/3.png" alt="project 4 photo" />
+              <p>Image 6</p>
+            </div>
+
+            <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+            <a class="next" onclick="updateSlide(1)">&#10095;</a>
           </div>
         </div>
       </section>
@@ -78,7 +106,39 @@
             rows="3"
             placeholder="Message (Diperlukan)"
           ></textarea>
-          <a href="#">Kirim</a>
+          <a href="#" class="btn-send">Kirim</a>
+        </div>
+      </section>
+
+      <section class="section-faq">
+        <div class="faq">
+          <h2>FAQ</h2>
+          <button class="accordion">Question 1?</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus nesciunt unde atque fuga corrupti distinctio sunt
+              delectus tempore!
+            </p>
+          </div>
+
+          <button class="accordion">Question 2?</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus nesciunt unde atque fuga corrupti distinctio sunt
+              delectus tempore!
+            </p>
+          </div>
+
+          <button class="accordion">Question 3</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus nesciunt unde atque fuga corrupti distinctio sunt
+              delectus tempore!
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -91,5 +151,7 @@
         <li>Hubungi Saya</li>
       </ul>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
