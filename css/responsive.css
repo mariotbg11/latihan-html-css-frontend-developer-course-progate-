@@ -26,10 +26,16 @@
   .project-image img {
     width: 250px;
   }
+
+  .prev,
+  .next {
+    top: 100px;
+    left: 33%;
+  }
 }
 
 /* *********************************** */
-/* UNTUK SMARTPHONE (640px) */
+/* UNTUK SMARTPHONE LARGE (640px) */
 /* *********************************** */
 @media (max-width: 640px) {
   header ul {
@@ -50,7 +56,13 @@
   }
 
   .project-image img {
-    width: 180px;
+    width: 170px;
+  }
+
+  .prev,
+  .next {
+    top: 70px;
+    left: 32.5%;
   }
 }
 
@@ -76,7 +88,22 @@
     row-gap: 50px;
   }
 
-  a {
+  .project-image img {
+    width: 100px;
+  }
+
+  .prev,
+  .next {
+    top: 35px;
+    left: 30.5%;
+    font-size: 14px;
+  }
+
+  .next {
+    right: -5%;
+  }
+
+  .btn-send {
     width: 100%;
   }
 
